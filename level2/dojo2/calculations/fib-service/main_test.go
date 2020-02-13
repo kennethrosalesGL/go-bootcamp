@@ -2,12 +2,6 @@ package main
 
 import "testing"
 
-func BenchmarkFibonacci(b *testing.B) {
-  for i := 0; i < b.N; i++ {
-    Fibonacci(10)
-  }
-}
-
 func TestFibonacci(t *testing.T) {
   data := []struct {
     n    uint64
