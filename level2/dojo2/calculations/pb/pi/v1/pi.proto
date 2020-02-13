@@ -1,0 +1,16 @@
+  
+syntax = "proto3";
+
+package pb.pi.v1;
+
+message Empty {
+
+}
+
+message PiResponse {
+  float result = 1;
+}
+
+service PiService {
+  rpc Compute (Empty) returns (PiResponse) {}
+}
